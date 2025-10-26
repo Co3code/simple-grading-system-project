@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d2a4e;
+    /* fallback solid blue */
+    color: #e0f0ff;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/bg.jpg') no-repeat center center/cover;
+    filter: blur(10px) brightness(0.6);
+    z-index: -1;
+}
+
+/* Top Navbar */
+.navbar-blur {
+    background: rgba(0, 44, 89, 0.85);
+    /* darker blue with opacity */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(74, 200, 224, 0.15);
+}
+
+.navbar-blur .navbar-brand {
+    color: #4ac8e0;
+    font-weight: 600;
+}
+
+.navbar-blur .nav-link,
+.navbar-blur .navbar-text {
+    color: #cde9fb;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(4, 66, 121, 0.75);
+    backdrop-filter: blur(12px);
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    padding-top: 1rem;
+    border-right: 1px solid rgba(74, 200, 224, 0.15);
+    z-index: 1020;
+    display: none;
+    flex-direction: column;
+}
+
+.sidebar a {
+    color: #a6d1f7;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background-color: rgba(74, 200, 224, 0.25);
+    border-left: 4px solid #4ac8e0;
+    padding-left: 16px;
+    color: #d1f0ff;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 90px 30px 30px;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        display: none !important;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 90px 15px 20px;
+    }
+}
+
+.profile-pic,
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-glass {
+    background: rgba(74, 200, 224, 0.15);
+    border: 1px solid rgba(74, 200, 224, 0.3);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 20px;
+    color: #e0f0ff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-glass:hover {
+    transform: translateY(-4px);
+}
+
+.metric-icon {
+    font-size: 2.8rem;
+    flex-shrink: 0;
+    color: #4ac8e0;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #b2d4ec;
+}
+
+.card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.activity-list li {
+    background: transparent;
+    border-color: rgba(74, 200, 224, 0.25);
+    color: #a7cce5;
+}
+
+#mobileSidebar a:hover,
+#mobileSidebar a:focus {
+    color: #a6d1f7;
+    text-decoration: none;
+}
+
+a {
+    color: #a6d1f7;
+    text-decoration: none;
+}
+
+#mobileSidebar a:hover,
+#mobileSidebar a:focus {
+    color: #d1f0ff;
+    text-decoration: none;
+}
+
+/* Transparent Card */
+.card-glass2 {
+    background: rgba(74, 200, 224, 0.15);
+    border: 1px solid rgba(74, 200, 224, 0.3);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 20px;
+    color: #e0f0ff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Transparent Table */
+.table-glass-available {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(74, 200, 224, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+
+
+.table-glass-available thead th {
+    background: transparent;
+    color: #f8fdffff;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.table-glass-available tbody tr:hover {
+    background-color: rgba(74, 200, 224, 0.25);
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(74, 200, 224, 0.4);
+    transition: 0.3s ease;
+}
+
+.table-glass-available tbody td {
+    background: transparent;
+    border-top: 1px solid rgba(74, 200, 224, 0.2);
+    color: #e0f0ff;
+}
+
+.table-glass-available th,
+.table-glass-available td {
+    padding: 12px;
+    vertical-align: middle;
+}

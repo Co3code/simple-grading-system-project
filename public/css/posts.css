@@ -1,0 +1,374 @@
+.center-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.h0h0 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 2.5em;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: #1c1c5e;
+}
+
+.h1h1 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 2.5em;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #1c1c5e;
+}
+
+.h2h2 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 2.3em;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #1c1c5e;
+}
+
+.h3h3 {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 2.3em;
+  font-weight: 1000;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #1c1c5e;
+  margin-bottom: 20px;
+}
+
+/* ===== LINES ===== */
+.h2h2 svg {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 80px;
+  z-index: -1;
+}
+
+.h2h2 path {
+  stroke: #FFD740;
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: drawline 2s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 80%;
+}
+
+.h2h2 path:nth-child(1) {
+  stroke-width: 8;
+  opacity: 0.95;
+  animation-delay: 0s;
+}
+
+.h2h2 path:nth-child(2) {
+  stroke-width: 9;
+  opacity: 1;
+  animation-delay: 2.2s;
+}
+
+.h3h3 svg {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 80px;
+  z-index: -1;
+}
+
+.h3h3 path {
+  stroke: #FFD740;
+  fill: none;
+  stroke-linecap: round;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  animation: drawline 2s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 50% cover 80%;
+}
+
+.h3h3 path:nth-child(1) {
+  stroke-width: 8;
+  opacity: 0.95;
+  animation-delay: 0s;
+}
+
+.h3h3 path:nth-child(2) {
+  stroke-width: 9;
+  opacity: 1;
+  animation-delay: 2.2s;
+}
+
+@keyframes drawline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ===== ===== ===== ===== ===== */
+
+#section3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15%;
+  row-gap: 2.2em;
+}
+
+#section3 .main {
+  width: 250px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 25em;
+  height: 10em;
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s ease-in-out;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.fl {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.fl:hover .fullscreen {
+  scale: 1.2;
+}
+
+.fl:hover .fullscreen_svg {
+  fill: white;
+}
+
+.fullscreen {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 1em 0.5em 1em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.fullscreen_svg {
+  width: 15px;
+  height: 15px;
+  fill: rgb(177, 176, 176);
+  transition: 0.2s ease-in-out;
+}
+
+.card_back {
+  position: absolute;
+  width: 25em;
+  height: 12.2em;
+  background: linear-gradient(45deg, #0b459c, #678fb8, #f8f9fa);
+  border-radius: 7px;
+  margin-top: 1.5em;
+  margin-left: 1.1em;
+  margin-bottom: 5em;
+  transition: 0.2s ease-in-out;
+
+  z-index: -1;
+}
+
+.main:hover .card_back {
+  margin-top: -0em;
+  margin-left: 0em;
+  scale: 1.1;
+  height: 15.25em;
+  cursor: pointer;
+}
+
+.main:hover .fl {
+  opacity: 1;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.img {
+  width: 2.25em;
+  height: 2.25em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0.5em;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.text_m {
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.text_s {
+  font-size: 0.6em;
+  margin-right: auto;
+}
+
+.btns {
+  display: flex;
+  gap: 0.5em;
+}
+
+.likes,
+.comments,
+.views {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5em;
+  height: 1.4em;
+  border-radius: 4px;
+  margin-top: -0.5em;
+  opacity: 0;
+  background-color: #444857;
+  transition: 0.2s ease-in-out;
+}
+
+.likes_text,
+.comments_text {
+  font-family: Montserrat;
+  font-size: 0.8em;
+  margin-left: 0.25em;
+  color: white;
+}
+
+.views_text {
+  font-family: Montserrat;
+  font-size: 0.6em;
+  margin-left: 0.25em;
+  color: white;
+}
+
+.likes_svg,
+.comments_svg,
+.views_svg {
+  width: 12px;
+  height: 12px;
+  fill: white;
+}
+
+.main:hover .likes {
+  margin-top: 0.5em;
+  opacity: 1;
+}
+
+.main:hover .comments {
+  margin-top: 0.5em;
+  opacity: 1;
+}
+
+.main:hover .views {
+  margin-top: 0.5em;
+  opacity: 1;
+}
+
+.card_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 0.8em;
+  width: 14em;
+  border-radius: 10px;
+  font-family: Montserrat;
+  font-size: 0.8em;
+  align-self: center;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: black;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+  scale: 1.1;
+  opacity: 1;
+  color: transparent;
+  background: linear-gradient(90deg,
+      #ce68d9,
+      #45c6db,
+      #45db79,
+      #9f45b0,
+      #e54ed0,
+      #ffe4f2);
+  background-size: 800% 800%;
+  animation: AnimationName 1s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "dalira-php/project",
+    "description": "A lightweight PHP template for faster and easier web development.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+        "league/plates": "^3.6",
+        "dalira-php/view": "^1.0",
+        "dalira-php/model": "^1.0",
+        "dalira-php/controller": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/",
+            "config\\": "config/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "php config/Generator.php",
+        "serve": "php config/Serve.php",
+        "commands": "@php -r \"echo 'Available commands: serve, commands, create-model, create-controller, create-view\n';\"",
+        "create-model": "php vendor/dalira-php/model/Generator.php",
+        "create-controller": "php vendor/dalira-php/controller/Generator.php",
+        "create-view": "php vendor/dalira-php/view/Generator.php"
+    }
+}

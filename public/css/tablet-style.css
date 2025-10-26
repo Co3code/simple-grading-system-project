@@ -1,0 +1,251 @@
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar {
+    padding: 0.3rem 0.3rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.2rem 0.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse {
+    background-color: #0d6efd;
+    border-radius: 0 0 10px 10px;
+    padding: 0.3rem 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+  }
+
+  /* SECTION 3 */
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  #video-section {
+    height: 100vh;
+  }
+
+  #center-picture {
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -63px;
+    border-width: 3px;
+  }
+
+  #awardees-map-video {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  #awardee-showcase {
+    width: 400%;
+    padding: 0;
+    margin-bottom: 10px !important;
+    border-radius: 15px;
+  }
+
+  .showcase-img {
+    width: 400%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    margin: 0;
+  }
+
+  #awardees-map-video h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #awardees-map-video .row {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: row;
+    /* Place side by side */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #awardees-map-video .col-md-6 {
+    width: 48%;
+    /* Equal width for both columns */
+  }
+
+  .ratio.ratio-16x9 iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  .map-container {
+    margin-top: 0;
+  }
+
+  .map-container h2 {
+    margin-top: 3%;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    gap: 8px;
+  }
+
+  #lightbox-img {
+    max-width: 95%;
+    max-height: 70%;
+  }
+
+  #lightbox .nav-arrow {
+    font-size: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 10000;
+  }
+
+  #lightbox .prev {
+    left: 10px;
+  }
+
+  #lightbox .next {
+    right: 10px;
+  }
+
+  #facebook-posts {
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+    padding-top: 0;
+  }
+
+  #facebook-posts h2 {
+    margin-bottom: 10px;
+  }
+
+  #facebook-posts .row {
+    margin-top: 0;
+    gap: 10px;
+  }
+
+  #facebook-posts .fb-post-container {
+    margin: 10px;
+    padding-top: 20px;
+  }
+
+  .fb-label {
+    font-size: 0.8rem;
+    top: 8px;
+    left: 8px;
+  }
+
+  /* SECTION 3 */
+  /*.h2h2 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    #section3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #section3 .main {
+        width: 50%;
+    }
+        */
+
+  /* SECTION 3 - Base styles (mobile-first) */
+  .h2h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  #section3 {
+    margin-top: 20px !important;
+    padding-top: 0 !important;
+    display: flex;
+    flex-direction: row;
+    /* Place side by side */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #section3 .main {
+    width: 42% !important;
+    align-items: center;
+  }
+
+  .card {
+    width: 48%;
+    height: 8em;
+  }
+
+  .card_back {
+    width: 100%;
+    height: 10em;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 0.85em;
+    margin-left: 0.4em;
+  }
+
+  .text_m {
+    font-size: 0.8em;
+  }
+
+  .text_s {
+    font-size: 0.65em;
+  }
+
+  button {
+    width: 10em;
+    font-size: 0.7em;
+    padding: 0.6em;
+  }
+
+  .likes,
+  .comments,
+  .views {
+    width: 2.5em;
+    height: 1.2em;
+  }
+
+  .likes_svg,
+  .comments_svg,
+  .views_svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .likes_text,
+  .comments_text,
+  .views_text {
+    font-size: 0.65em;
+  }
+}
